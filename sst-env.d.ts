@@ -9,6 +9,10 @@ declare module "sst" {
       "type": "sst.aws.ApiGatewayV2"
       "url": string
     }
+    "ClickupEvents": {
+      "type": "sst.aws.Queue"
+      "url": string
+    }
     "ClickupToken": {
       "type": "sst.sst.Secret"
       "value": string
