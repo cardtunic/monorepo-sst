@@ -9,9 +9,9 @@ export default $config({
     };
   },
   async run() {
-    await import("./infra/queue");
     await import("./infra/secrets");
-    await import("./infra/storage");
+    await import("./infra/rds");
+    await import("./infra/queue");
     const api = await import("./infra/api");
 
     return {

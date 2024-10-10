@@ -1,6 +1,6 @@
 interface WebhookPayload {
   event: string;
-  history_items: HistoryItem[];
+  history_items: HistoryItem;
   task_id: string;
   webhook_id: string;
 }

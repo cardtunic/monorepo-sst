@@ -17,13 +17,18 @@ declare module "sst" {
       "type": "sst.sst.Secret"
       "value": string
     }
-    "MyBucket": {
-      "name": string
-      "type": "sst.aws.Bucket"
+    "MyPostgres": {
+      "clusterArn": string
+      "database": string
+      "host": string
+      "password": string
+      "port": number
+      "secretArn": string
+      "type": "sst.aws.Postgres"
+      "username": string
     }
-    "MyLinkable": {
-      "foo": string
-      "type": "sst.sst.Linkable"
+    "MyVpc": {
+      "type": "sst.aws.Vpc"
     }
   }
 }
